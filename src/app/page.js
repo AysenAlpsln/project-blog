@@ -7,7 +7,7 @@ import BlogSummaryCard from '@/components/BlogSummaryCard';
 import styles from './homepage.module.css';
 
 async function Home() {
-  var blogs = await getBlogPostList();
+  const blogs = await getBlogPostList();
 
   return (
     <div className={styles.wrapper}>
